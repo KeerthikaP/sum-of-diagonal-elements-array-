@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+     int a[10][10],r,c,sum=0,i,j;
+     printf("Enter the size of row  ");
+     scanf("%d",&r);
+     printf("\nEnter the size of column  ");
+     scanf("%d",&c);
+     printf("\nENTER THE ELEMENTS OF %d*%d MATRIX :\n\n",r,c);
+     for(i=0;i<r;i++)
+          for(j=0;j<c;j++)
+          {
+          	   printf("element-[%d][%d]:",i,j);
+               scanf("%d",&a[i][j]);
+          }
+     printf("\n THE %d*%d MATRIX IS: \n\n",r,c);
+     for(i=0;i<r;i++)
+     {
+          for(j=0;j<c;j++)
+          {
+               printf("%2d ",a[i][j]);
+          }
+          printf("\n");
+     }
+     for(i = 0; i < r; i++)
+  	{
+   		sum = sum + a[i][i];
+  	}
+ 	printf("\n The sum of Diagonal Elements of a Matrix =  %d", sum );
+ }
